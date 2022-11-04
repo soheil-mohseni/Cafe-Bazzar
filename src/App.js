@@ -1,11 +1,14 @@
-import BasicGrid from "./nav";
+import Counter from "./Counter";
+import ScrollableTabsButtonAuto from "./Slideshow";
 
 
 
 function App() {
   return (
     <div className="App">
-      <BasicGrid/>
+      {/* <ScrollableTabsButtonAuto/> */}
+      {/* <Counter></Counter> */}
+      <ScrollableTabsButtonAuto/>
     </div>
   );
 }

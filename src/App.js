@@ -1,5 +1,4 @@
-import Counter from "./Counter";
-import ScrollableTabsButtonAuto from "./Slideshow";
+import Collections from "./colllections/Collections";
 
 
 
@@ -8,7 +7,8 @@ function App() {
     <div className="App">
       {/* <ScrollableTabsButtonAuto/> */}
       {/* <Counter></Counter> */}
-      <ScrollableTabsButtonAuto/>
+      {/* <ScrollableTabsButtonAuto/> */}
+      <Collections></Collections>
     </div>
   );
 }

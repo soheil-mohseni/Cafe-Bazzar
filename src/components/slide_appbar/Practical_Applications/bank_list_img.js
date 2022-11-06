@@ -1,7 +1,7 @@
 
 
-const baseurl = "./pub"
-const imgs = [
+const baseurl = "./bank_pub"
+const Bank_imgs = [
     {
         title: 'Bankino',
         subtitle: 'Finance',
@@ -76,4 +76,4 @@ const imgs = [
 
 ] 
 
-export  {imgs};
+export  {Bank_imgs};

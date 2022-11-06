@@ -9,7 +9,7 @@ export default function ActionAreaCard(props) {
   return (
     <Card sx={{ maxWidth: 100, backgroundColor: "white" }}>
       <CardActionArea>
-        <img style={{ maxWidth: 100 }} src={require(`${props.urls}`)} />
+        <img style={{ maxWidth: 100 }} src={require(`${props.urls}`)}  />
 
         <CardContent sx={{ paddingTop: "0px", paddingBottom: "25px" }}>
           <Typography gutterBottom variant="h8" component="div">

@@ -2,17 +2,21 @@
 //import Bazaarbutton from "./components/ButtonAppBar";
 // import Bazaarbutton from "./components/ButtonAppBar";
 
-import Nav from "./components/navbar/Nav";
-import Bankbar from "./components/slide_appbar/E-bank Apps/Bank_Slide";
+import Collections from "./components/colllections/Collections";
+import Nav from "./components/UI/navbar/Nav";
+import Slide_Show from "./components/slideshow/Slideshow";
 import Practical from "./components/slide_appbar/Practical_Applications/Practical_Slide";
-import Search2 from "./components/UI/Search2";
+import Chart from "./components/chart/Chart";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav />
       <Practical />
-      <Bankbar />
+      <Slide_Show/>
+      <Collections/> */}
+    <Chart></Chart>
+    
     </div>
   );
 }

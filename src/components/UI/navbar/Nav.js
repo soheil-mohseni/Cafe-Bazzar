@@ -2,12 +2,12 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import MenuIcon from "@mui/icons-material/Menu";
 import PersonIcon from "@mui/icons-material/Person";
-import Search from "../UI/Search";
+import Search from "../Search";
 import "./nav.css";
 import MenuList from "./MenuList";
 import "./nav.css";
 import DownloadBazaar from "./DownloadBazaar";
-import Search2 from "../UI/Search2";
+import Search2 from "../Search2";
 import "./nav.css";
 
 export default function Nav() {

@@ -4,8 +4,12 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import ActionAreaCard from "./Practical_Card";
-import { imgs } from "./practical_list_img";
+import { Practical_imgs } from "./practical_list_img";
+import { Bank_imgs } from "./bank_list_img"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { title_appbar } from "./title_appbar";
+import { virus_imgs } from "./virus_list"; 
+import { podcast_imgs } from "./podcast_list";
 
 export default function Practical() {
   const [value, setValue] = React.useState(0);
@@ -13,9 +17,15 @@ export default function Practical() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  
+  const img_bar =[Practical_imgs,Bank_imgs ,virus_imgs, podcast_imgs]
 
   return (
+    <div>
+  {img_bar.map((imgs,index) => (
+
     <Box
+    key={Math.random()}
       sx={{
         maxWidth: { xs: "90%", md: 1900 },
         bgcolor: "white",
@@ -31,7 +41,7 @@ export default function Practical() {
     >
       <p style={{ display: "inline-block", paddingLeft: "2%" }}>
         {" "}
-        Practical Applications
+        {title_appbar[index].title}
       </p>
       <ChevronRightIcon
         sx={{
@@ -58,21 +68,24 @@ export default function Practical() {
         scrollButtons
         allowScrollButtonsMobile
         aria-label="scrollable force tabs example"
-      >
-        {imgs.map((imgs) => (
-          <div key={imgs.urls}>
-            <Tab
-              label={
-                <ActionAreaCard
-                  urls={imgs.urls}
-                  title={imgs.title}
-                  subtitle={imgs.subtitle}
-                />
-              }
-            />
-          </div>
-        ))}
+      >             
+            {imgs.map((imge) => (
+                       
+                    <Tab
+                    key={imge.urls}
+                      label={
+                        <ActionAreaCard
+                          urls={imge.urls}
+                          title={imge.title}
+                          subtitle={imge.subtitle}
+                        />
+                      }
+                      />
+            ))}     
+
       </Tabs>
     </Box>
+    ))}
+    </div>
   );
 }

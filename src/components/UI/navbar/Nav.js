@@ -13,8 +13,8 @@ import "./nav.css";
 export default function Nav() {
   return (
     <Box
-      sx={{ flexGrow: 1, maxWidth: "100%", maxHeight: "100%" }}
-      md={{ flexGrow: 1, maxWidth: "100%", maxHeight: "100%" }}
+      sx={{flexGrow: 1, maxWidth: "100%", maxHeight: "100%" ,position: 'top', position: "fixed", top: 0, left: '0px' , right: '0px',Bottom: '0px',zIndex:'1'}}
+      md={{ flexGrow: 1, maxWidth: "100%", maxHeight: "100%" ,}}
     >
       <Grid
         container
@@ -52,7 +52,7 @@ export default function Nav() {
         <Grid
           className="search_bazaar"
           sx={{ marginLeft: "0px", marginRight: "0px" }}
-          xs={6.75}
+          xs={6.5}
         >
           <Search />
         </Grid>

@@ -21,7 +21,7 @@ export default function Practical() {
   const img_bar =[Practical_imgs,Bank_imgs ,virus_imgs, podcast_imgs]
 
   return (
-    <div>
+    <div style={{marginTop: "100px"}}>
   {img_bar.map((imgs,index) => (
 
     <Box

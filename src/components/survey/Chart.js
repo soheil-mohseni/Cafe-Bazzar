@@ -5,6 +5,7 @@ import CircularProgress, {
   circularProgressClasses,
 } from '@mui/material/CircularProgress';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
+import StarIcon from '@mui/icons-material/Star';
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 10,
@@ -18,13 +19,13 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
 }));
 
-function App(props) {
+function Chart(props) {
   return (
-    <Box sx={{ maxWidth: '600px' }}>
-		<p style={{display: "inline-block", float: 'left'}}>5 </p>
-      <BorderLinearProgress variant="determinate" sx={{ maxWidth: '500px' }} value={90} />
+    <Box sx={{ maxWidth: '500px' }}>
+		<p style={{display: "inline-block",paddingLeft: '0px', marginTop:'0px' , float: 'left'}}> {props.number} <StarIcon sx={{fontSize: '15px'}}/></p>
+      <BorderLinearProgress variant="determinate" sx={{ maxWidth: '466px', top: "5px" }} value={90.5} />
     </Box>
   );
 }
 
-export default App;
+export default Chart;
